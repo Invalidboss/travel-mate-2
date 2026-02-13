@@ -1,0 +1,53 @@
+# Mapping used by backend/services/excel_export.py.
+# Keep all worksheet/cell references centralized here.
+workbook:
+  sheet_name: Reisekosten
+
+meta:
+  employee_name: B2
+  project_name: B3
+  trip_period: B4
+
+routes:
+  outbound:
+    from: B7
+    to: C7
+    date: D7
+  return:
+    from: B8
+    to: C8
+    date: D8
+  connecting:
+    from: B9
+    to: C9
+    date: D9
+
+expenses:
+  start_row: 12
+  columns:
+    category: A
+    account: B
+    description: C
+    amount: D
+
+meal_allowance:
+  breakfast_days: B22
+  lunch_days: B23
+  dinner_days: B24
+  total: D25
+
+final_totals:
+  subtotal_expenses: D28
+  grand_total: D29
+
+verification:
+  mandatory_cells:
+    - B2
+    - B3
+    - B4
+    - B7
+    - C7
+    - D7
+    - D12
+    - D25
+    - D29
