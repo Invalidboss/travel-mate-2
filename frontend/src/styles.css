@@ -1,0 +1,162 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #14213d;
+  background: #f4f6fb;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #d9dfeb;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.subtle {
+  color: #4f5d75;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #bbc4d8;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+}
+
+fieldset {
+  margin-top: 1rem;
+  border: 1px solid #dde3f0;
+  border-radius: 8px;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.warning {
+  color: #bc1f1f;
+  font-size: 0.83rem;
+}
+
+.dropzone {
+  border: 2px dashed #b8c4e0;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #f8faff;
+}
+
+.dropzone.dragging {
+  border-color: #4062bb;
+  background: #edf2ff;
+}
+
+.upload-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.upload-item {
+  border: 1px solid #d7deee;
+  border-radius: 8px;
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.upload-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e0e6f4;
+  padding: 0.55rem;
+  text-align: left;
+}
+
+.confidence {
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.8rem;
+}
+
+.confidence.high {
+  background: #1f8f4e;
+}
+
+.confidence.medium {
+  background: #d98e04;
+}
+
+.confidence.low {
+  background: #be1f1f;
+}
+
+.actions,
+.toolbar {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #3454d1;
+  color: #fff;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #6f7fa3;
+}
+
+.pill {
+  background: #eef2ff;
+  border: 1px solid #ccd7ff;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+}
